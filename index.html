@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+
+    <audio id="clip1">
+  	    <source src="./sound/sound1.mp3"></source>
+    </audio>
+    <audio id="clip2">
+  	    <source src="./sound/sound2.mp3"></source>
+    </audio>
+    <audio id="clip3">
+  	    <source src="./sound/sound3.mp3"></source>
+    </audio>
+    <audio id="clip4">
+  	    <source src="./sound/sound4.mp3"></source>
+    </audio>
+</head>
+
+<body>
+
+    <div class="outer-circle">
+        <div id="topleft"></div>
+        <div id="topright"></div>
+        <div id="bottomleft"></div>
+        <div id="bottomright"></div>
+        <div class="inner-circle">
+            <div class="title">SIMON</div>
+            <button class="button" id="start">Start</button>
+            <div id="turn"></div>
+            <div class="text">
+                COUNT
+            </div>
+        </div>
+    </div><br><br>
+    <div class="box">
+    <div><h2>Player</h2></div>
+    <div id="player"></div>
+    </div>
+    <script  src="app.js"></script>
+
+</body>
+</html>
